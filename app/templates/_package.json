@@ -1,0 +1,30 @@
+{
+  "name": "<%= slugname %>",
+  "version": "0.0.0",
+  "main": "lib/<%= shortSlugname %>.js",
+  "description": "<%= props.description %>",<% if (props.homepage) { %>
+  "homepage": "<%= props.homepage %>",<%}%>
+  "bugs": "<%= repoUrl %>/issues",
+  "author": {
+    "name": "<%= props.authorName %>",
+    "email": "<%= props.authorEmail %>"<% if (props.authorUrl) { %>,
+    "url": "<%= props.authorUrl %>"<% } %>
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= repoUrl %>"
+  },
+  "licenses": [
+    {
+      "type": "<%= props.license %>"
+    }
+  ],
+  "keywords":[
+  ],
+  "dependencies": {
+    "execution": "^0.1.0"
+  },
+  "scripts": {
+    "test": "node test/<%= slugname %>_test"
+  }
+}
