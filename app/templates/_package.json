@@ -22,7 +22,7 @@
   "keywords":[
   ],
   "dependencies": {
-    "execution": "^0.1.0"
+    "execution": "^0.0.7"
   },
   "scripts": {
     "test": "node test/<%= slugname %>_test"
