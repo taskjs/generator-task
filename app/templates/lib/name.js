@@ -3,7 +3,7 @@ var Execution = require('execution');
 module.exports = Execution.extend({
     // The type of option could be HTML5 input types: file, directory, number, range, select,
     // url, email, tel, color, date, time, month, time, week, datetime(datetime-local),
-    // string(text), boolean(checkbox), array, function and object.
+    // string(text), boolean(checkbox), array, regexp, function and object.
     options: {
         foo: {
             label: 'Amount of parallelism',
@@ -35,6 +35,5 @@ module.exports = Execution.extend({
         var logger = this.logger;
 
         resolve(inputs);
-
     }
 })

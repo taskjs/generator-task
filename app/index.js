@@ -26,7 +26,8 @@ var TaskGenerator = yeoman.generators.Base.extend({
 
         var prompts = [{
             name: 'name',
-            message: 'Task Name'
+            message: 'Task Name',
+            default: path.basename(process.cwd())
         }, {
             name: 'description',
             message: 'Description',

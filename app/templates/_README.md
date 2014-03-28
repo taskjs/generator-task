@@ -6,7 +6,7 @@
 ### Usage Examples
 
 ```js
-var <%= shortSafeSlugname %> = new require('<%= props.name %>')
+var <%= shortSafeSlugname %> = new (require('<%= props.name %>'))
 <%= shortSafeSlugname %>.run(inputs, options, logger)
 ```
 

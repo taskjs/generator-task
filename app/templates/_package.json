@@ -1,6 +1,6 @@
 {
   "name": "<%= slugname %>",
-  "version": "0.0.0",
+  "version": "<%= props.version %>",
   "main": "lib/<%= shortSlugname %>.js",
   "description": "<%= props.description %>",<% if (props.homepage) { %>
   "homepage": "<%= props.homepage %>",<%}%>
@@ -20,9 +20,10 @@
     }
   ],
   "keywords":[
+    "task"
   ],
   "dependencies": {
-    "execution": "^0.0.7"
+    "execution": "^0.1.0"
   },
   "scripts": {
     "test": "node test/<%= slugname %>_test"

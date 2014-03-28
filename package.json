@@ -1,12 +1,12 @@
 {
   "name": "generator-task",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yeoman generator for JavaScript Task",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "yuanyan/generator-task",
+  "repository": "taskjs/generator-task",
   "author": {
-    "name": "yuanyan",
+    "name": "Yuanyan Cao",
     "url": "https://github.com/yuanyan"
   },
   "engines": {
