@@ -26,6 +26,6 @@
     "execution": "^0.1.0"
   },
   "scripts": {
-    "test": "node test/<%= slugname %>_test"
+    "test": "node test/<%= shortSlugname %>_test"
   }
 }
