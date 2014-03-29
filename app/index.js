@@ -72,6 +72,11 @@ var TaskGenerator = yeoman.generators.Base.extend({
                 function (g) { return g[1].toUpperCase(); }
             );
 
+            this.shortSafeSlugnameClass = this.shortSafeSlugname.replace(
+                /^([a-z])/,
+                function (g) { return g.toUpperCase(); }
+            );
+
             if(props.githubUsername){
                 this.repoUrl = 'https://github.com/' + props.githubUsername + '/' + this.slugname;
             } else {

@@ -1,13 +1,13 @@
 'use strict';
 
 var assert = require('assert');
-var <%= shortSafeSlugname %> = require('../lib/<%= shortSlugname %>');
+var <%= shortSafeSlugnameClass %> = require('../lib/<%= shortSlugname %>');
 
 function errorHandler(err){
     process.nextTick(function rethrow() { throw err; });
 }
 
-(new <%= shortSafeSlugname %>).run(
+(new <%= shortSafeSlugnameClass %>).run(
     [], // inputs
     {}, // options
     console // logger
