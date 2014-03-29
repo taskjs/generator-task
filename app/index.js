@@ -26,7 +26,7 @@ var TaskGenerator = yeoman.generators.Base.extend({
 
         var prompts = [{
             name: 'name',
-            message: 'Task Name',
+            message: 'Task NPM Name',
             default: path.basename(process.cwd())
         }, {
             name: 'description',
@@ -37,15 +37,12 @@ var TaskGenerator = yeoman.generators.Base.extend({
             message: 'Version',
             default: '0.0.1'
         }, {
-            name: 'homepage',
-            message: 'Project homepage'
+            name: 'githubUsername',
+            message: 'GitHub username'
         }, {
             name: 'license',
             message: 'License',
             default: 'MIT'
-        }, {
-            name: 'githubUsername',
-            message: 'GitHub username'
         }, {
             name: 'authorName',
             message: 'Author name'
@@ -75,7 +72,7 @@ var TaskGenerator = yeoman.generators.Base.extend({
                 function (g) { return g[1].toUpperCase(); }
             );
 
-            if(!props.githubUsername){
+            if(props.githubUsername){
                 this.repoUrl = 'https://github.com/' + props.githubUsername + '/' + this.slugname;
             } else {
                 this.repoUrl = 'user/repo';
