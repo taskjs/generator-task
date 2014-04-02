@@ -1,6 +1,6 @@
 {
   "name": "generator-task",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Yeoman generator for JavaScript Task",
   "license": "MIT",
   "main": "app/index.js",

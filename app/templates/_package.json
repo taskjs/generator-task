@@ -23,7 +23,7 @@
     "task"
   ],
   "dependencies": {
-    "execution": "^0.1.0"
+    "execution": "^0.1.1"
   },
   "scripts": {
     "test": "node test/<%= shortSlugname %>_test"
