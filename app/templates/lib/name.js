@@ -26,8 +26,8 @@ module.exports = Execution.extend({
             placeholder: 'Try selecting more than one file when browsing for files.'
         }
     },
-    run: function (inputs, options, logger) {
-        return this._run(inputs, options, logger);
+    run: function (inputs, options, logger, settings) {
+        return this._run(inputs, options, logger, settings);
     },
     execute: function (resolve, reject) {
         var options = this.options;
